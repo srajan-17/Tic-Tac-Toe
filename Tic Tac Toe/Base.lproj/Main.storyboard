@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tic_Tac_Toe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Island" translatesAutoresizingMaskIntoConstraints="NO" id="5uP-nJ-4Mi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIC TAC TOE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIW-62-6AA">
+                                <rect key="frame" x="16" y="45" width="288" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Woz-Ry-pbw">
+                                <rect key="frame" x="16" y="269" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Player 1's Name (X):" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqH-eZ-g90">
+                                <rect key="frame" x="16" y="184" width="288" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5g-Ld-IqA">
+                                <rect key="frame" x="16" y="417" width="288" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <state key="normal" title="START!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KtV-qY-9B1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dcc-lv-sIg">
+                                <rect key="frame" x="16" y="303" width="288" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="DLT-a7-3bO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="SUBMIT NAME">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="usg-aU-Kic"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5uP-nJ-4Mi" secondAttribute="trailing" id="3gp-Hb-0Dn"/>
+                            <constraint firstItem="iIW-62-6AA" firstAttribute="leading" secondItem="nqH-eZ-g90" secondAttribute="leading" id="4a6-Ia-84X"/>
+                            <constraint firstItem="5uP-nJ-4Mi" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="DzG-nD-knM"/>
+                            <constraint firstItem="iIW-62-6AA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="Jmn-5L-4zn"/>
+                            <constraint firstItem="u5g-Ld-IqA" firstAttribute="top" secondItem="Dcc-lv-sIg" secondAttribute="bottom" constant="88" id="MzS-Rx-7gx"/>
+                            <constraint firstItem="iIW-62-6AA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="N55-n1-fR0"/>
+                            <constraint firstItem="iIW-62-6AA" firstAttribute="trailing" secondItem="nqH-eZ-g90" secondAttribute="trailing" id="OlX-II-EO5"/>
+                            <constraint firstItem="Woz-Ry-pbw" firstAttribute="top" secondItem="nqH-eZ-g90" secondAttribute="bottom" constant="57" id="Shx-Bi-qNf"/>
+                            <constraint firstItem="Dcc-lv-sIg" firstAttribute="top" secondItem="Woz-Ry-pbw" secondAttribute="bottom" constant="4" id="TP3-lb-aOB"/>
+                            <constraint firstItem="5uP-nJ-4Mi" firstAttribute="centerX" secondItem="Woz-Ry-pbw" secondAttribute="centerX" id="Vcw-uu-SSt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="u5g-Ld-IqA" secondAttribute="bottom" constant="101" id="hCV-gm-0Xa"/>
+                            <constraint firstItem="Dcc-lv-sIg" firstAttribute="trailing" secondItem="u5g-Ld-IqA" secondAttribute="trailing" id="i1D-Vt-1DR"/>
+                            <constraint firstItem="Dcc-lv-sIg" firstAttribute="leading" secondItem="u5g-Ld-IqA" secondAttribute="leading" id="iHg-am-4qb"/>
+                            <constraint firstItem="nqH-eZ-g90" firstAttribute="trailing" secondItem="Woz-Ry-pbw" secondAttribute="trailing" id="lId-qf-hcS"/>
+                            <constraint firstItem="5uP-nJ-4Mi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="niX-vI-MiX"/>
+                            <constraint firstItem="Woz-Ry-pbw" firstAttribute="trailing" secondItem="Dcc-lv-sIg" secondAttribute="trailing" id="ovF-qn-gix"/>
+                            <constraint firstItem="nqH-eZ-g90" firstAttribute="leading" secondItem="Woz-Ry-pbw" secondAttribute="leading" id="ryz-dG-Ayp"/>
+                            <constraint firstItem="Woz-Ry-pbw" firstAttribute="leading" secondItem="Dcc-lv-sIg" secondAttribute="leading" id="vgt-KG-HYq"/>
+                            <constraint firstItem="5uP-nJ-4Mi" firstAttribute="centerY" secondItem="Woz-Ry-pbw" secondAttribute="centerY" id="xD4-71-z1e"/>
+                            <constraint firstItem="5uP-nJ-4Mi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xFf-LS-jZT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enterNameLabel" destination="nqH-eZ-g90" id="2WS-xY-xGU"/>
+                        <outlet property="nameTextField" destination="Woz-Ry-pbw" id="7iv-0F-ph3"/>
+                        <outlet property="titleLabel" destination="iIW-62-6AA" id="fNp-9D-IOV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.875" y="38.028169014084504"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Island" width="320" height="568"/>
+    </resources>
+</document>
