@@ -537,11 +537,6 @@ class ViewController2: UIViewController {
         
     }
     
-    
-    
-    
-    //Button4.setTitle( "4: Emma Watson" , for: [] )
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
