@@ -135,7 +135,7 @@ class ViewController2: UIViewController {
         }
         // Last one checks for tie
         else if used_boxes == 9 {
-            winnerLabel.text = "It's a tie!"
+            winnerLabel.text = "It is a tie!"
         }
         
     }
@@ -170,6 +170,7 @@ class ViewController2: UIViewController {
                 firstPickLabel.text = Player2
                 symbol = "O"
             }
+            firstPickLabel.backgroundColor = UIColor.black
             first_pick_done = true
         }
         
@@ -508,6 +509,7 @@ class ViewController2: UIViewController {
     @IBAction func restartPressed(_ sender: AnyObject) {
         
         firstPickLabel.text = ""
+        firstPickLabel.backgroundColor = nil
         first_pick_done = false
         winnerLabel.text = ""
         symbol = ""
